@@ -1,0 +1,14 @@
+mixin icon(name, className)
+  - var icon = (`img/icons/${name}.svg`);
+  svg(class=className viewBox=icon.viewBox preserveAspectRatio="none")
+    use(xlink:href=icon.url)
+
+mixin image(path, className)
+  img(src=(`img/${path}`) class=className)
+
+mixin nav(className, items, href)
+  nav(class=`${className}`)
+    ul(class=`${className}-list`)
+      each item in items
+        li(class=`${className}-list__item`)
+          a(class=`${className}-list__link` href=`#${href}`)= item
