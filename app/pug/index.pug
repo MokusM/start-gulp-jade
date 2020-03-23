@@ -2,21 +2,21 @@ include includes/mixins
 
 doctype html
 html(lang="ru")
-  - var title = "Главная";
-  include includes/head
-  
-  body(class='loaded')
-    // BODY
-    .main-wrapper
-      main(class='content')
-        include sections/main
-      // HEADER
-      include includes/header
-      
-      // FOOTER
-      include includes/footer
-      
-      // PRELOADER AND POPUP
-      .icon-load
+	-var title = "Главная";
+	include includes/head
 
-  include includes/scripts  
+	body(class='loaded')
+	// BODY
+	.main-wrapper
+		main(class='content')
+			include sections/main
+		// HEADER
+		include includes/header
+		
+		// FOOTER
+		include includes/footer
+		
+		// PRELOADER AND POPUP
+		.icon-load
+
+	include includes/scripts  

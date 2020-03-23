@@ -38,6 +38,13 @@ $(function () {
 	/*button open main nav end*/
 
 	/* components begin*/
+	$('#fullpage').fullpage({
+		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+		anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+		menu: '#menu',
+		slidesNavigation: true
+	});
+
 	/*	
 	if ($('.js-img').length) {
 		var jsImg = $(".js-img");

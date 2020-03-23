@@ -1,10 +1,10 @@
 header
-  .wrapper
-    a(href="#", title="logo").logo
-      +image('loader.gif', 'logo')
-    - var navItems = ["Главная", "Обо мне"];
-    nav.main-nav
-      ul
-        each item in navItems
-          li
-            a(href='#') #{item}
+	.wrapper
+		a(href="#", title="logo").logo
+			img(src="img/loader.gif", alt="").logo
+		- var navItems = ["Главная", "Обо мне"];
+		nav.main-nav
+		ul
+			each item in navItems
+				li
+					a(href='#') #{item}

@@ -1,6 +1,5 @@
-@import '../utils/_mixins';
-@import '../utils/_variables';
-@import '../utils/_sprite';
+@import "../utils/_mixins";
+@import "../utils/_variables";
 
 body {
 	margin: 0px;
@@ -10,32 +9,122 @@ body {
 	height: 100%;
 	line-height: 1;
 	position: relative;
-	font-size: $base-font-size!important;
+	font-size: $base-font-size !important;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-
-
 /*MAIN*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, 
-form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer,
-header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-	margin: 0; padding: 0; border: 0; font-size: 100%; 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
 	display: block;
 }
-blockquote, q {
+blockquote,
+q {
 	quotes: none;
 }
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: '';
+	content: "";
 	content: none;
 }
 
@@ -66,7 +155,7 @@ textarea {
 input[type="button"],
 input[type="submit"],
 button {
-	cursor: pointer
+	cursor: pointer;
 }
 
 td {
@@ -81,7 +170,7 @@ form {
 
 a {
 	color: $link-color;
-	@include transition($default-transition);
+	transition: $default-transition;
 	text-decoration: none;
 	outline: none;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -91,11 +180,11 @@ a,
 span,
 div,
 button {
-	outline: none!important
+	outline: none !important;
 }
 
-input[type=submit],
-input[type=button],
+input[type="submit"],
+input[type="button"],
 button {
 	-webkit-appearance: none;
 	outline: none;
@@ -114,9 +203,7 @@ button {
 	box-sizing: border-box;
 }
 
-.clearfix:after,
-.wrapper:after,
-.row:after{
+.clearfix:after {
 	content: ".";
 	display: block;
 	height: 0;
